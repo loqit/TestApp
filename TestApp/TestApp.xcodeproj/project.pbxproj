@@ -19,6 +19,21 @@
 		64A54D0A2A9E6B83002054CC /* UpdateServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A54D092A9E6B83002054CC /* UpdateServiceProtocol.swift */; };
 		64A54D0D2A9E6DF1002054CC /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A54D0C2A9E6DF1002054CC /* ResponseData.swift */; };
 		64A54D112A9E706B002054CC /* MockUpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A54D102A9E706B002054CC /* MockUpdateService.swift */; };
+		64A54D152A9E7AC2002054CC /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A54D142A9E7AC2002054CC /* MenuView.swift */; };
+		64A54D172A9E7AD1002054CC /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A54D162A9E7AD1002054CC /* MenuViewModel.swift */; };
+		64A54D1A2A9E7B01002054CC /* MenuViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A54D192A9E7B01002054CC /* MenuViewModelProtocol.swift */; };
+		64A54D1D2A9E7C23002054CC /* FloatingBackgroind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A54D1C2A9E7C23002054CC /* FloatingBackgroind.swift */; };
+		64A54D202A9E826C002054CC /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64A54D1F2A9E826C002054CC /* BebasNeue-Regular.ttf */; };
+		64A54D2B2A9E828A002054CC /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64A54D212A9E8289002054CC /* Lato-Italic.ttf */; };
+		64A54D2C2A9E828A002054CC /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64A54D222A9E8289002054CC /* Lato-BoldItalic.ttf */; };
+		64A54D2D2A9E828A002054CC /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64A54D232A9E8289002054CC /* Lato-LightItalic.ttf */; };
+		64A54D2E2A9E828A002054CC /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64A54D242A9E8289002054CC /* Lato-Black.ttf */; };
+		64A54D2F2A9E828A002054CC /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64A54D252A9E8289002054CC /* Lato-Bold.ttf */; };
+		64A54D302A9E828A002054CC /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64A54D262A9E8289002054CC /* Lato-Regular.ttf */; };
+		64A54D312A9E828A002054CC /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64A54D272A9E8289002054CC /* Lato-Light.ttf */; };
+		64A54D322A9E828A002054CC /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64A54D282A9E828A002054CC /* Lato-Thin.ttf */; };
+		64A54D332A9E828A002054CC /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64A54D292A9E828A002054CC /* Lato-ThinItalic.ttf */; };
+		64A54D342A9E828A002054CC /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64A54D2A2A9E828A002054CC /* Lato-BlackItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +50,22 @@
 		64A54D092A9E6B83002054CC /* UpdateServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateServiceProtocol.swift; sourceTree = "<group>"; };
 		64A54D0C2A9E6DF1002054CC /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
 		64A54D102A9E706B002054CC /* MockUpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUpdateService.swift; sourceTree = "<group>"; };
+		64A54D142A9E7AC2002054CC /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		64A54D162A9E7AD1002054CC /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		64A54D192A9E7B01002054CC /* MenuViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModelProtocol.swift; sourceTree = "<group>"; };
+		64A54D1C2A9E7C23002054CC /* FloatingBackgroind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingBackgroind.swift; sourceTree = "<group>"; };
+		64A54D1F2A9E826C002054CC /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BebasNeue-Regular.ttf"; path = "../../../Code Test Fonts/Bebas_Neue/BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
+		64A54D212A9E8289002054CC /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "../../../Code Test Fonts/Lato/Lato-Italic.ttf"; sourceTree = "<group>"; };
+		64A54D222A9E8289002054CC /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BoldItalic.ttf"; path = "../../../Code Test Fonts/Lato/Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		64A54D232A9E8289002054CC /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-LightItalic.ttf"; path = "../../../Code Test Fonts/Lato/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		64A54D242A9E8289002054CC /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Black.ttf"; path = "../../../Code Test Fonts/Lato/Lato-Black.ttf"; sourceTree = "<group>"; };
+		64A54D252A9E8289002054CC /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../../../Code Test Fonts/Lato/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		64A54D262A9E8289002054CC /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../../../Code Test Fonts/Lato/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		64A54D272A9E8289002054CC /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "../../../Code Test Fonts/Lato/Lato-Light.ttf"; sourceTree = "<group>"; };
+		64A54D282A9E828A002054CC /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Thin.ttf"; path = "../../../Code Test Fonts/Lato/Lato-Thin.ttf"; sourceTree = "<group>"; };
+		64A54D292A9E828A002054CC /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-ThinItalic.ttf"; path = "../../../Code Test Fonts/Lato/Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		64A54D2A2A9E828A002054CC /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BlackItalic.ttf"; path = "../../../Code Test Fonts/Lato/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		64A54D352A9E838C002054CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +98,9 @@
 		64A54CED2A9E65FB002054CC /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				64A54D352A9E838C002054CC /* Info.plist */,
+				64A54D1E2A9E824C002054CC /* Resources */,
+				64A54D122A9E7AAD002054CC /* Views */,
 				64A54D032A9E6A73002054CC /* Models */,
 				64A54CFC2A9E6611002054CC /* Network */,
 				64A54CEE2A9E65FB002054CC /* TestAppApp.swift */,
@@ -121,6 +155,59 @@
 				64A54CFD2A9E662B002054CC /* NetworkService.swift */,
 			);
 			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		64A54D122A9E7AAD002054CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64A54D132A9E7AB2002054CC /* Menu */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		64A54D132A9E7AB2002054CC /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				64A54D182A9E7AE5002054CC /* MenuViewModel */,
+				64A54D1B2A9E7C08002054CC /* Helpers */,
+				64A54D142A9E7AC2002054CC /* MenuView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		64A54D182A9E7AE5002054CC /* MenuViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				64A54D162A9E7AD1002054CC /* MenuViewModel.swift */,
+				64A54D192A9E7B01002054CC /* MenuViewModelProtocol.swift */,
+			);
+			path = MenuViewModel;
+			sourceTree = "<group>";
+		};
+		64A54D1B2A9E7C08002054CC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				64A54D1C2A9E7C23002054CC /* FloatingBackgroind.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		64A54D1E2A9E824C002054CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				64A54D242A9E8289002054CC /* Lato-Black.ttf */,
+				64A54D2A2A9E828A002054CC /* Lato-BlackItalic.ttf */,
+				64A54D252A9E8289002054CC /* Lato-Bold.ttf */,
+				64A54D222A9E8289002054CC /* Lato-BoldItalic.ttf */,
+				64A54D212A9E8289002054CC /* Lato-Italic.ttf */,
+				64A54D272A9E8289002054CC /* Lato-Light.ttf */,
+				64A54D232A9E8289002054CC /* Lato-LightItalic.ttf */,
+				64A54D262A9E8289002054CC /* Lato-Regular.ttf */,
+				64A54D282A9E828A002054CC /* Lato-Thin.ttf */,
+				64A54D292A9E828A002054CC /* Lato-ThinItalic.ttf */,
+				64A54D1F2A9E826C002054CC /* BebasNeue-Regular.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,8 +268,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A54D2E2A9E828A002054CC /* Lato-Black.ttf in Resources */,
+				64A54D332A9E828A002054CC /* Lato-ThinItalic.ttf in Resources */,
 				64A54CF62A9E65FE002054CC /* Preview Assets.xcassets in Resources */,
+				64A54D2D2A9E828A002054CC /* Lato-LightItalic.ttf in Resources */,
 				64A54CF32A9E65FE002054CC /* Assets.xcassets in Resources */,
+				64A54D342A9E828A002054CC /* Lato-BlackItalic.ttf in Resources */,
+				64A54D322A9E828A002054CC /* Lato-Thin.ttf in Resources */,
+				64A54D302A9E828A002054CC /* Lato-Regular.ttf in Resources */,
+				64A54D312A9E828A002054CC /* Lato-Light.ttf in Resources */,
+				64A54D2B2A9E828A002054CC /* Lato-Italic.ttf in Resources */,
+				64A54D202A9E826C002054CC /* BebasNeue-Regular.ttf in Resources */,
+				64A54D2C2A9E828A002054CC /* Lato-BoldItalic.ttf in Resources */,
+				64A54D2F2A9E828A002054CC /* Lato-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,11 +294,15 @@
 				64A54D002A9E663C002054CC /* NetworkServiceProtocol.swift in Sources */,
 				64A54CF12A9E65FB002054CC /* ContentView.swift in Sources */,
 				64A54CFE2A9E662C002054CC /* NetworkService.swift in Sources */,
+				64A54D172A9E7AD1002054CC /* MenuViewModel.swift in Sources */,
 				64A54CEF2A9E65FB002054CC /* TestAppApp.swift in Sources */,
+				64A54D1D2A9E7C23002054CC /* FloatingBackgroind.swift in Sources */,
 				64A54D0D2A9E6DF1002054CC /* ResponseData.swift in Sources */,
 				64A54D0A2A9E6B83002054CC /* UpdateServiceProtocol.swift in Sources */,
 				64A54D112A9E706B002054CC /* MockUpdateService.swift in Sources */,
+				64A54D152A9E7AC2002054CC /* MenuView.swift in Sources */,
 				64A54D052A9E6A8C002054CC /* ResponseModel.swift in Sources */,
+				64A54D1A2A9E7B01002054CC /* MenuViewModelProtocol.swift in Sources */,
 				64A54D022A9E6A0F002054CC /* NetworkError.swift in Sources */,
 				64A54D072A9E6B3C002054CC /* UpdateService.swift in Sources */,
 			);
@@ -334,6 +436,7 @@
 				DEVELOPMENT_TEAM = N835J7CFBP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -363,6 +466,7 @@
 				DEVELOPMENT_TEAM = N835J7CFBP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
