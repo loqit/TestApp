@@ -11,7 +11,7 @@ struct MenuView: View {
     
     var body: some View {
         VStack {
-            VStack {
+            VStack(spacing: 10) {
                 customNavBar
                 firstCard
                 secondCard
@@ -93,7 +93,7 @@ struct MenuView: View {
     private var secondCard: some View {
         FloatingBackground(color: .white) {
             VStack {
-                HStack {
+                HStack(spacing: 12) {
                     Circle()
                         .strokeBorder(imageBorderColor, lineWidth: 4)
                         .background {
