@@ -26,12 +26,3 @@ struct FloatingBackground<Content: View>: View {
         }
     }
 }
-
-struct FloatingBackgroind_Previews: PreviewProvider {
-    static var previews: some View {
-        FloatingBackground(color: .white) {
-            Text("Hello")
-        }
-        
-    }
-}

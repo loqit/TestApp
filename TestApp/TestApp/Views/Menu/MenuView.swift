@@ -2,6 +2,13 @@ import SwiftUI
 
 struct MenuView: View {
     
+    private var viewModel = MenuViewModel(updateService: MockUpdateService())
+    
+    @State var buttonGradient = Constants.defaultGradient
+    @State var imageBorderColor = Constants.defaultBorderColor
+    @State var cardTitle = Constants.defaultTitle
+    @State var cardSubtitle = Constants.defaultSubTitle
+    
     var body: some View {
         VStack {
             customNavBar
@@ -85,7 +92,7 @@ struct MenuView: View {
             VStack {
                 HStack {
                     Circle()
-                        .strokeBorder(Color.red, lineWidth: 4)
+                        .strokeBorder(imageBorderColor, lineWidth: 4)
                         .background {
                             Image("profile_image")
                                 .resizable()
@@ -94,11 +101,11 @@ struct MenuView: View {
                         }
                         .frame(width: 100, height: 100)
                     VStack(alignment: .leading) {
-                        Text("COMPLETE YOUR PROFILE")
+                        Text(cardTitle)
                             .font(.custom("BebasNeue-Regular", size: 29))
                             .foregroundColor(Color(red: 0.11, green: 0.19, blue: 0.28))
                             .frame(width: 193, alignment: .topLeading)
-                        Text("Take a few steps to show the kommunity who you really are")
+                        Text(cardSubtitle)
                             .font(.custom("Lato-Regular", size: 13))
                             .frame(width: 192, alignment: .leading)
                     }
@@ -130,22 +137,22 @@ struct MenuView: View {
             }
             .padding(.leading, 16)
         }
-        .frame(width: 345, height: 166, alignment: .leading)
-        .overlay {
-           GeometryReader { _ in
-               Image("third_background")
-                   .resizable()
-                   .aspectRatio(contentMode: .fill)
-                   .frame(width: 196, height: 166)
-                   .cornerRadius(20)
-           }
-           .offset(x: 149)
-         }
+                           .frame(width: 345, height: 166, alignment: .leading)
+                           .overlay {
+                               GeometryReader { _ in
+                                   Image("third_background")
+                                       .resizable()
+                                       .aspectRatio(contentMode: .fill)
+                                       .frame(width: 196, height: 166)
+                                       .cornerRadius(20)
+                               }
+                               .offset(x: 149)
+                           }
     }
     
     private var verifyNowButton: some View {
         Button {
-            // do something
+            
         } label: {
             ZStack {
                 Capsule()
@@ -156,8 +163,7 @@ struct MenuView: View {
                 HStack {
                     Image("Warning")
                     Text("Verify now")
-                        .font(.custom("Lato", size: 14)
-                        )
+                        .font(.custom("Lato", size: 14))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                 }
@@ -168,16 +174,16 @@ struct MenuView: View {
     
     private var doneButton: some View {
         Button {
-            // do something
+            Task {
+                await viewModel.loadData()
+                if viewModel.isResponseSuccess {
+                    updateCard()
+                }
+            }
         } label: {
             ZStack {
                 Capsule()
-                    .fill(.linearGradient(stops: [
-                        Gradient.Stop(color: Color(red: 0.5, green: 0.9, blue: 1), location: 0.00),
-                        Gradient.Stop(color: Color(red: 0, green: 0.82, blue: 1), location: 1.00),
-                    ],
-                                          startPoint: UnitPoint(x: 0.81, y: -1.02),
-                                          endPoint: UnitPoint(x: 0.42, y: 1.07)))
+                    .fill(buttonGradient)
                 HStack {
                     Text("Let's get it done")
                         .font(.custom("Lato", size: 16)
@@ -187,6 +193,15 @@ struct MenuView: View {
                 }
             }
             .frame(width: 301, height: 45)
+        }
+    }
+    
+    private func updateCard() {
+        buttonGradient = Constants.activatedGradient
+        imageBorderColor = Constants.activeBorderColor
+        if let data = viewModel.data?.data {
+            cardTitle = data.title
+            cardSubtitle = data.message
         }
     }
 }
