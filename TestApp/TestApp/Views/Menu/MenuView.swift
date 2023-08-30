@@ -11,10 +11,14 @@ struct MenuView: View {
     
     var body: some View {
         VStack {
-            customNavBar
-            firstCard
-            secondCard
-            thirdCard
+            VStack {
+                customNavBar
+                firstCard
+                secondCard
+                thirdCard
+            }
+            .padding(.leading, 15)
+            .padding(.trailing, 10)
             VStack(alignment: .leading, spacing: 1) {
                 settingsSection(imageName: "account_settings", title: "Account Settings")
                 settingsSection(imageName: "logout", title: "Logout")
@@ -78,13 +82,12 @@ struct MenuView: View {
             .padding(.leading, 16)
             .frame(width: 345, alignment: .leading)
             .background {
-                GeometryReader { proxy in
+                HStack {
+                    Spacer()
                     Image("verify_image")
-                        .offset(x: 187, y: -15)
                 }
             }
         }
-        .frame(width: 345, height: 166)
     }
     
     private var secondCard: some View {
@@ -104,21 +107,16 @@ struct MenuView: View {
                         Text(cardTitle)
                             .font(.custom("BebasNeue-Regular", size: 29))
                             .foregroundColor(Color(red: 0.11, green: 0.19, blue: 0.28))
-                            .frame(width: 193, alignment: .topLeading)
                         Text(cardSubtitle)
                             .font(.custom("Lato-Regular", size: 13))
                             .frame(width: 192, alignment: .leading)
                     }
-                    .frame(width: 193)
                 }
                 Spacer()
                 doneButton
             }
             .padding(.vertical, 22)
-            .padding(.leading, 16)
-            .frame(width: 345, alignment: .leading)
         }
-        .frame(width: 345, height: 218)
     }
     
     private var thirdCard: some View {
@@ -137,16 +135,17 @@ struct MenuView: View {
             }
             .padding(.leading, 16)
         }
-                           .frame(width: 345, height: 166, alignment: .leading)
                            .overlay {
                                GeometryReader { _ in
-                                   Image("third_background")
-                                       .resizable()
-                                       .aspectRatio(contentMode: .fill)
-                                       .frame(width: 196, height: 166)
-                                       .cornerRadius(20)
+                                   HStack {
+                                       Spacer()
+                                       Image("third_background")
+                                           .resizable()
+                                           .aspectRatio(contentMode: .fill)
+                                           .frame(width: 196, height: 166)
+                                           .cornerRadius(20)
+                                   }
                                }
-                               .offset(x: 149)
                            }
     }
     
@@ -186,13 +185,13 @@ struct MenuView: View {
                     .fill(buttonGradient)
                 HStack {
                     Text("Let's get it done")
-                        .font(.custom("Lato", size: 16)
-                        )
+                        .font(.custom("Lato", size: 16))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
+                        .padding(.vertical, 10)
                 }
             }
-            .frame(width: 301, height: 45)
+            .padding(.horizontal, 22)
         }
     }
     
