@@ -11,8 +11,8 @@ struct MenuView: View {
     
     var body: some View {
         VStack {
+            customNavBar
             VStack(spacing: 10) {
-                customNavBar
                 firstCard
                 secondCard
                 thirdCard
