@@ -69,7 +69,7 @@ struct MenuView: View {
     }
     
     private var firstCard: some View {
-        FloatingBackground(color: .white) {
+        FloatingBackground(color: .white, aligment: .leading) {
             VStack(alignment: .leading) {
                 Text("GET VERIFIED")
                     .font(.custom("BebasNeue-Regular", size: 39))
@@ -80,12 +80,13 @@ struct MenuView: View {
                 verifyNowButton
             }
             .padding(.leading, 16)
-            .frame(width: 345, alignment: .leading)
-            .background {
-                HStack {
-                    Spacer()
-                    Image("verify_image")
-                }
+        }
+        .overlay {
+            HStack {
+                Spacer()
+                Image("verify_image")
+                    .padding(.trailing, 18)
+                    .padding(.top, 15)
             }
         }
     }
