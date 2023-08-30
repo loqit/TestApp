@@ -4,14 +4,18 @@ struct FloatingBackground<Content: View>: View {
     
     var content: () -> Content
     var color: Color
+    var aligment: Alignment
     
-    init(color: Color, @ViewBuilder content: @escaping () -> Content) {
+    init(color: Color,
+         aligment: Alignment = .center ,
+         @ViewBuilder content: @escaping () -> Content) {
         self.content = content
         self.color = color
+        self.aligment = aligment
     }
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: aligment) {
             RoundedRectangle(cornerRadius: 20)
                 .foregroundColor(color)
                 .background(.clear)
