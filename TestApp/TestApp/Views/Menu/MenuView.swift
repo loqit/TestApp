@@ -4,15 +4,58 @@ struct MenuView: View {
     
     var body: some View {
         VStack {
-            Color.gray
+            customNavBar
             firstCard
             secondCard
             thirdCard
+            VStack(alignment: .leading, spacing: 1) {
+                settingsSection(imageName: "account_settings", title: "Account Settings")
+                settingsSection(imageName: "logout", title: "Logout")
+                    .padding(.bottom, 1)
+            }
         }
-        .background(.gray)
+        .frame(maxWidth: .infinity)
+        .background(Color(red: 0.97, green: 0.96, blue: 0.97))
     }
     
     // MARK: - Private
+    
+    private var customNavBar: some View {
+        HStack {
+            Image("profile_image")
+                .resizable()
+                .frame(width: 38, height: 38)
+                .clipShape(Circle())
+                .padding(.leading, 20)
+            VStack(alignment: .leading) {
+                Text("ESSEXLAD")
+                    .font(.custom("BebasNeue-Regular", size: 19))
+                Text("View and edit profile")
+                    .font(.custom("Lato-Regular", size: 13))
+            }
+            Spacer()
+            Button {
+                // do something
+            } label: {
+                Image("close_button")
+                    .padding(.trailing, 15)
+            }
+        }
+        .frame(height: 58)
+        .background(.white)
+    }
+    
+    private func settingsSection(imageName: String, title: String) -> some View {
+        HStack {
+            Image(imageName)
+                .padding(.leading, 17)
+            Text(title)
+                .font(.custom("BebasNeue-Regular", size: 20))
+            Spacer()
+        }
+        .frame(height: 51)
+        .background(.white)
+    }
     
     private var firstCard: some View {
         FloatingBackground(color: .white) {
@@ -31,7 +74,6 @@ struct MenuView: View {
                 GeometryReader { proxy in
                     Image("verify_image")
                         .offset(x: 187, y: -15)
-                    
                 }
             }
         }
@@ -65,7 +107,7 @@ struct MenuView: View {
                 Spacer()
                 doneButton
             }
-            .padding([.top, .bottom], 22)
+            .padding(.vertical, 22)
             .padding(.leading, 16)
             .frame(width: 345, alignment: .leading)
         }
