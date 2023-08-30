@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		644D388A2A9F34CD006C534B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D38892A9F34CD006C534B /* Constants.swift */; };
 		64A54CEF2A9E65FB002054CC /* TestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A54CEE2A9E65FB002054CC /* TestAppApp.swift */; };
-		64A54CF12A9E65FB002054CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A54CF02A9E65FB002054CC /* ContentView.swift */; };
 		64A54CF32A9E65FE002054CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A54CF22A9E65FE002054CC /* Assets.xcassets */; };
 		64A54CF62A9E65FE002054CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A54CF52A9E65FE002054CC /* Preview Assets.xcassets */; };
 		64A54CFE2A9E662C002054CC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A54CFD2A9E662B002054CC /* NetworkService.swift */; };
@@ -41,7 +40,6 @@
 		644D38892A9F34CD006C534B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		64A54CEB2A9E65FB002054CC /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A54CEE2A9E65FB002054CC /* TestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppApp.swift; sourceTree = "<group>"; };
-		64A54CF02A9E65FB002054CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		64A54CF22A9E65FE002054CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64A54CF52A9E65FE002054CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64A54CFD2A9E662B002054CC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				64A54D032A9E6A73002054CC /* Models */,
 				64A54CFC2A9E6611002054CC /* Network */,
 				64A54CEE2A9E65FB002054CC /* TestAppApp.swift */,
-				64A54CF02A9E65FB002054CC /* ContentView.swift */,
 				64A54CF22A9E65FE002054CC /* Assets.xcassets */,
 				64A54CF42A9E65FE002054CC /* Preview Content */,
 			);
@@ -295,7 +292,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A54D002A9E663C002054CC /* NetworkServiceProtocol.swift in Sources */,
-				64A54CF12A9E65FB002054CC /* ContentView.swift in Sources */,
 				64A54CFE2A9E662C002054CC /* NetworkService.swift in Sources */,
 				64A54D172A9E7AD1002054CC /* MenuViewModel.swift in Sources */,
 				64A54CEF2A9E65FB002054CC /* TestAppApp.swift in Sources */,
