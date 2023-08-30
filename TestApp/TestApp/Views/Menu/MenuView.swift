@@ -180,7 +180,7 @@ struct MenuView: View {
                                           endPoint: UnitPoint(x: 0.42, y: 1.07)))
                 HStack {
                     Text("Let's get it done")
-                        .font(.custom("Lato", size: 14)
+                        .font(.custom("Lato", size: 16)
                         )
                         .fontWeight(.bold)
                         .foregroundColor(.white)
